@@ -37,10 +37,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "FPGA Workshop Badge for Hackaday Belgrade 2018"
 Date ""
-Rev ""
-Comp ""
+Rev "1.0"
+Comp "David Shah and Miodrag Milanovic"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -88,8 +88,6 @@ F 3 "" H 12700 3200 50  0001 C CNN
 	1    12700 3200
 	0    1    1    0   
 $EndComp
-Text Label 13000 3300 0    60   ~ 0
-SPENA
 $Comp
 L R_Small R6
 U 1 1 5A4A8CBA
@@ -123,10 +121,6 @@ F 3 "" H 12700 3500 50  0001 C CNN
 	1    12700 3500
 	0    1    1    0   
 $EndComp
-Text Label 13000 3400 0    60   ~ 0
-SPCLK
-Text Label 13000 3500 0    60   ~ 0
-SPDAT
 Text Label 12900 6000 0    60   ~ 0
 HSYNC
 Text Label 12900 6100 0    60   ~ 0
@@ -365,12 +359,12 @@ $EndComp
 $Comp
 L R_Small R1
 U 1 1 5A4ACF50
-P 8600 1800
-F 0 "R1" V 8550 1900 39  0000 L CNN
-F 1 "10k" V 8600 1800 39  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 8600 1800 50  0001 C CNN
-F 3 "" H 8600 1800 50  0001 C CNN
-	1    8600 1800
+P 8550 1800
+F 0 "R1" V 8500 1900 39  0000 L CNN
+F 1 "10k" V 8550 1800 39  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 8550 1800 50  0001 C CNN
+F 3 "" H 8550 1800 50  0001 C CNN
+	1    8550 1800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -503,13 +497,13 @@ DCLK
 Text Label 5900 4700 0    60   ~ 0
 DEN
 Text Label 5900 6200 0    60   ~ 0
-~RESET
+AUDIO_1
 Text Label 5900 6100 0    60   ~ 0
-SPENA
+AUDIO_0
 Text Label 5900 6000 0    60   ~ 0
-SPCLK
+TPS_CTRL
 Text Label 5900 5900 0    60   ~ 0
-SPDAT
+~RESET
 $Comp
 L GND #PWR?
 U 1 1 5A7F3F3F
@@ -524,9 +518,9 @@ $EndComp
 Text Label 11950 4800 0    60   ~ 0
 AUDIO_0
 Text Label 7900 4700 0    60   ~ 0
-AUDIO_0
+EXT0
 Text Label 7900 4800 0    60   ~ 0
-AUDIO_1
+EXT1
 Text Label 11950 4900 0    60   ~ 0
 AUDIO_1
 Text Label 7900 6000 0    60   ~ 0
@@ -539,8 +533,6 @@ Text Label 7900 5700 0    60   ~ 0
 BUTTON_3
 Text Label 7900 5600 0    60   ~ 0
 BUTTON_4
-Text Label 7900 5500 0    60   ~ 0
-BUTTON_5
 $Comp
 L SW_Push SW?
 U 1 1 5A7EDEBE
@@ -747,15 +739,11 @@ EXT1
 Text Label 8150 7600 0    60   ~ 0
 EXT2
 Text Label 7900 4900 0    60   ~ 0
-EXT0
-Text Label 7900 5000 0    60   ~ 0
-EXT1
-Text Label 7900 5100 0    60   ~ 0
 EXT2
-Text Label 7900 5200 0    60   ~ 0
+Text Label 7900 5000 0    60   ~ 0
 EXT3
-Text Label 7900 5300 0    60   ~ 0
-LED
+Text Label 7900 5200 0    60   ~ 0
+BUTTON_5
 Text Label 7900 5400 0    60   ~ 0
 OSC_OUT
 $Comp
@@ -778,7 +766,7 @@ F 1 "RED LED" H 9600 7000 50  0000 C CNN
 F 2 "" H 9600 7100 50  0001 C CNN
 F 3 "" H 9600 7100 50  0001 C CNN
 	1    9600 7100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L R R?
@@ -789,10 +777,10 @@ F 1 "330" V 10000 7100 50  0000 C CNN
 F 2 "" V 9930 7100 50  0001 C CNN
 F 3 "" H 10000 7100 50  0001 C CNN
 	1    10000 7100
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Text Label 10300 7100 0    60   ~ 0
-LED
+LED0
 $Comp
 L GND #PWR?
 U 1 1 5A7FCB50
@@ -802,7 +790,7 @@ F 1 "GND" H 9250 6950 50  0000 C CNN
 F 2 "" H 9250 7100 50  0001 C CNN
 F 3 "" H 9250 7100 50  0001 C CNN
 	1    9250 7100
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	6150 6400 6500 6400
@@ -816,8 +804,6 @@ Wire Wire Line
 	8150 7400 8500 7400
 Wire Wire Line
 	7550 5400 7900 5400
-Wire Wire Line
-	7550 5300 7900 5300
 Wire Wire Line
 	7550 5200 7900 5200
 Wire Wire Line
@@ -848,12 +834,6 @@ Wire Wire Line
 	12350 3200 12600 3200
 Wire Wire Line
 	12800 3200 13450 3200
-Wire Wire Line
-	12800 3500 13450 3500
-Wire Wire Line
-	13450 3400 12800 3400
-Wire Wire Line
-	12800 3300 13450 3300
 Wire Wire Line
 	12400 3500 12600 3500
 Wire Wire Line
@@ -1011,12 +991,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 2000 8800 2000
 Wire Wire Line
-	8700 1800 8800 1800
-Wire Wire Line
-	8500 1800 8450 1800
-Wire Wire Line
-	8450 1800 8450 1600
-Connection ~ 8450 1600
+	8400 1850 8350 1850
 Wire Wire Line
 	10200 1600 10300 1600
 Wire Wire Line
@@ -1101,8 +1076,6 @@ Wire Wire Line
 	7900 5700 7550 5700
 Wire Wire Line
 	7900 5600 7550 5600
-Wire Wire Line
-	7900 5500 7550 5500
 Wire Wire Line
 	6350 7700 6600 7700
 Wire Wire Line
@@ -1272,4 +1245,68 @@ Wire Wire Line
 	8300 7800 8500 7800
 Wire Wire Line
 	8300 7900 8500 7900
+Wire Wire Line
+	13450 3300 12800 3300
+Wire Wire Line
+	13450 3400 12800 3400
+Wire Wire Line
+	13450 3500 12800 3500
+Text Label 7900 5300 0    60   ~ 0
+LED0
+Text Label 7900 5500 0    60   ~ 0
+LED1
+Wire Wire Line
+	7900 5300 7550 5300
+Wire Wire Line
+	7900 5500 7550 5500
+$Comp
+L LED D?
+U 1 1 5A7F8496
+P 9600 7550
+F 0 "D?" H 9600 7650 50  0000 C CNN
+F 1 "RED LED" H 9600 7450 50  0000 C CNN
+F 2 "" H 9600 7550 50  0001 C CNN
+F 3 "" H 9600 7550 50  0001 C CNN
+	1    9600 7550
+	1    0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A7F849C
+P 10000 7550
+F 0 "R?" V 10080 7550 50  0000 C CNN
+F 1 "330" V 10000 7550 50  0000 C CNN
+F 2 "" V 9930 7550 50  0001 C CNN
+F 3 "" H 10000 7550 50  0001 C CNN
+	1    10000 7550
+	0    1    -1   0   
+$EndComp
+Text Label 10300 7550 0    60   ~ 0
+LED1
+$Comp
+L GND #PWR?
+U 1 1 5A7F84A3
+P 9250 7550
+F 0 "#PWR?" H 9250 7300 50  0001 C CNN
+F 1 "GND" H 9250 7400 50  0000 C CNN
+F 2 "" H 9250 7550 50  0001 C CNN
+F 3 "" H 9250 7550 50  0001 C CNN
+	1    9250 7550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9450 7550 9250 7550
+Wire Wire Line
+	10300 7550 10150 7550
+Wire Wire Line
+	9850 7550 9750 7550
+Text Label 8750 1800 0    60   ~ 0
+TPS_CTRL
+Wire Wire Line
+	8650 1800 8800 1800
+Wire Wire Line
+	8450 1800 8450 1600
+Connection ~ 8450 1600
+NoConn ~ 7900 5100
+NoConn ~ 7250 3700
 $EndSCHEMATC
