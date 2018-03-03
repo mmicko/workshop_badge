@@ -1,0 +1,36 @@
+set_io clock_in 35
+
+set_io lcd_clk 18
+set_io lcd_den 19
+set_io lcd_vsync 11
+set_io lcd_hsync 9
+set_io lcd_reset 2
+
+set_io lcd_dat[7] 6
+set_io lcd_dat[6] 44
+set_io lcd_dat[5] 4
+set_io lcd_dat[4] 3
+set_io lcd_dat[3] 48
+set_io lcd_dat[2] 45
+set_io lcd_dat[1] 47
+set_io lcd_dat[0] 46
+
+set_io lcd_pwm 13
+
+set_io buttons[0] 23
+set_io buttons[1] 25
+set_io buttons[2] 26
+set_io buttons[3] 27
+set_io buttons[4] 21
+set_io buttons[5] 12
+
+set_io audio 37
+
+set_io pmod_0 32
+set_io pmod_1 31
+set_io pmod_2 34
+set_io pmod_3 43
+set_io pmod_4 36
+set_io pmod_5 42
+set_io pmod_6 38
+set_io pmod_7 28
