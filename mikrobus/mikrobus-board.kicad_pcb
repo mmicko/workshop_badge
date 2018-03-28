@@ -3,7 +3,7 @@
   (general
     (links 38)
     (no_connects 38)
-    (area 0 0 0 0)
+    (area 118.615 108.455 180.00762 156.845714)
     (thickness 1.6)
     (drawings 0)
     (tracks 0)
@@ -170,7 +170,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB8F58)
-    (at 121.92 110.49)
+    (at 124.46 111.76)
     (descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x08 2.54mm single row")
     (path /5732DECF)
@@ -222,7 +222,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB8F74)
-    (at 135.89 110.49)
+    (at 147.32 111.76)
     (descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x08 2.54mm single row")
     (path /5732E1C6)
@@ -274,7 +274,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB8F90)
-    (at 147.32 110.49)
+    (at 152.4 111.76)
     (descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x08 2.54mm single row")
     (path /5ABB8B35)
@@ -326,7 +326,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB8FAC)
-    (at 162.56 110.49)
+    (at 175.26 111.76)
     (descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x08 2.54mm single row")
     (path /5ABB8B3B)
@@ -378,7 +378,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x16_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB8FD0)
-    (at 125.73 147.32 90)
+    (at 127 154.94 90)
     (descr "Through hole straight pin header, 1x16, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x16 2.54mm single row")
     (path /5A7EF5F4)
@@ -446,7 +446,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x18_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB8FF6)
-    (at 120.65 137.16 90)
+    (at 121.92 137.16 90)
     (descr "Through hole straight pin header, 1x18, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x18 2.54mm single row")
     (path /5A7EF53F)
@@ -518,7 +518,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5ABB93C4)
-    (at 172.72 137.16)
+    (at 175.26 139.7)
     (descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x06 2.54mm single row")
     (path /5ABB93C6)
