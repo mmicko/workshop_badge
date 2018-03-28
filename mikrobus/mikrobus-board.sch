@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:mikrobus-board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,7 +50,7 @@ U 1 1 5A7EF53F
 P 6700 5500
 F 0 "UPDUINO2_UP1" H 6700 6400 50  0000 C CNN
 F 1 "Conn_01x18" H 6700 4500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x18_Pitch2.54mm" H 6700 5500 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x18_Pitch2.54mm" H 6700 5500 50  0001 C CNN
 F 3 "" H 6700 5500 50  0001 C CNN
 	1    6700 5500
 	1    0    0    -1  
@@ -62,7 +61,7 @@ U 1 1 5A7EF5F4
 P 7350 5400
 F 0 "UPDUINO2_DOWN1" H 7350 6200 50  0000 C CNN
 F 1 "Conn_01x16" H 7350 4500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x16_Pitch2.54mm" H 7350 5400 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x16_Pitch2.54mm" H 7350 5400 50  0001 C CNN
 F 3 "" H 7350 5400 50  0001 C CNN
 	1    7350 5400
 	-1   0    0    -1  
@@ -144,7 +143,7 @@ U 1 1 5732DECF
 P 3950 7500
 F 0 "P3" H 3950 7950 50  0000 C CNN
 F 1 "microBus_1" V 4050 7500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3950 7500 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 3950 7500 50  0001 C CNN
 F 3 "" H 3950 7500 50  0000 C CNN
 	1    3950 7500
 	1    0    0    -1  
@@ -155,7 +154,7 @@ U 1 1 5732E1C6
 P 5050 7500
 F 0 "P4" H 5050 7950 50  0000 C CNN
 F 1 "microBus_2" V 5150 7500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5050 7500 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 5050 7500 50  0001 C CNN
 F 3 "" H 5050 7500 50  0000 C CNN
 	1    5050 7500
 	1    0    0    -1  
@@ -215,7 +214,7 @@ U 1 1 5ABB8B35
 P 6400 7500
 F 0 "P5" H 6400 7950 50  0000 C CNN
 F 1 "microBus_1" V 6500 7500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 6400 7500 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 6400 7500 50  0001 C CNN
 F 3 "" H 6400 7500 50  0000 C CNN
 	1    6400 7500
 	1    0    0    -1  
@@ -226,7 +225,7 @@ U 1 1 5ABB8B3B
 P 7500 7500
 F 0 "P6" H 7500 7950 50  0000 C CNN
 F 1 "microBus_2" V 7600 7500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7500 7500 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 7500 7500 50  0001 C CNN
 F 3 "" H 7500 7500 50  0000 C CNN
 	1    7500 7500
 	1    0    0    -1  
@@ -282,13 +281,13 @@ Text Label 5800 7300 0    60   ~ 0
 RST_2
 NoConn ~ 7550 5300
 Text Label 8950 7150 0    60   ~ 0
-EXT_1
-Text Label 8950 7250 0    60   ~ 0
-EXT_2
-Text Label 8950 7350 0    60   ~ 0
-EXT_3
-Text Label 8950 7450 0    60   ~ 0
 EXT_4
+Text Label 8950 7250 0    60   ~ 0
+EXT_3
+Text Label 8950 7350 0    60   ~ 0
+EXT_2
+Text Label 8950 7450 0    60   ~ 0
+EXT_1
 $Comp
 L GND #PWR5
 U 1 1 5ABB9FEC
