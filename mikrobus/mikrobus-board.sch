@@ -82,13 +82,13 @@ OSC_OUT
 Text Label 5900 4800 0    60   ~ 0
 RST_1
 Text Label 5900 4900 0    60   ~ 0
-CS_1
-Text Label 5900 5000 0    60   ~ 0
-SCK_1
-Text Label 5900 5100 0    60   ~ 0
-MISO_1
-Text Label 5900 5200 0    60   ~ 0
 MOSI_1
+Text Label 5900 5000 0    60   ~ 0
+MISO_1
+Text Label 5900 5100 0    60   ~ 0
+SCK_1
+Text Label 5900 5200 0    60   ~ 0
+CS_1
 Text Label 5900 5300 0    60   ~ 0
 PWM_1
 Text Label 5900 5400 0    60   ~ 0
